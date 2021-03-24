@@ -1,0 +1,56 @@
+.nav_breadcrumb {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 2%;
+    margin: 2%;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.breadcrumb h2 {
+    display: flex;
+    padding: 0 12px 0 0;
+    align-items: center;
+}
+
+.breadcrumb_list {
+    display: flex;
+    /* padding-right: clamp(5px, 1vw, 22px); */
+    list-style: none;
+}
+
+.breadcrumb_state:after {
+    font-size: 2rem;
+    padding: 0 0 0 36px;
+    content: "\007C";
+}
+
+.breadcrumb_list li {
+    padding: 0;
+}
+
+.breadcrumb_list li+li:before {
+    padding: 8px;
+    content: url("../../assets/chevrons-right.svg");
+}
+
+.breadcrumb_list li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.settings {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #717171;
+    border-radius: 50%;
+}
