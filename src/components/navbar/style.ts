@@ -1,0 +1,61 @@
+import styled from 'styled-components'
+
+const Nav = styled.nav`
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 8px 2%;
+    background: #FFFFFF;
+    margin: 2%;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 14%);
+    border-radius: 8px;
+    font-family: Montserrat;
+    font-style: normal;
+    color: #2C2C2C;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin-block: auto;
+    margin-inline: 0;
+    padding-inline-end: clamp(5px, 1vw, 22px)
+}
+
+.user_nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile_bar {
+    display: flex;
+}
+
+.profile_bar ul {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 4px;
+    margin: 0px;
+}
+
+.profile_bar img {
+    height: 100%;
+}
+
+/* Fontes */
+
+.text_normal {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.text_light {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+`
+
+export default Nav

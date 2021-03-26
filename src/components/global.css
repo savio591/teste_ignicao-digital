@@ -218,6 +218,22 @@ input[type=range]:focus {
     content: url("../assets/chevron-right.svg");
 }
 
+.email {
+    content: url("../assets/mail.svg");
+}
+
+.message {
+    content: url("../assets/message-square.svg");
+}
+
+.todo {
+    content: url("../assets/check-square.svg");
+}
+
+.calendar {
+    content: url("../assets/calendar.svg")
+}
+
 /* Ações rápidas */
 
 .disable {
@@ -246,4 +262,23 @@ input[type=range]:focus {
 
 .h_g {
     min-height: 56px;
+}
+
+/* Estilo de Página Global */
+#app {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+#col_2 {
+    display: flex;
+    width: -webkit-fill-available;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1541px) and (min-width: 1231px) {
+    html {
+        font-size: 8px !important;
+    }
 }
