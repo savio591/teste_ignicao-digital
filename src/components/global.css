@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html {
     font-size: 10px;
+    /* Tamanho relativo global */
 }
 
 body {
@@ -16,6 +17,7 @@ h2 {
     font-size: 2.4rem;
     line-height: 29px;
     color: #2C2C2C;
+    display: contents;
 }
 
 h3 {
@@ -48,4 +50,200 @@ a {
     text-decoration: none;
     color: black;
     display: contents;
+}
+
+button {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    padding: 8px;
+    border: none;
+    min-height: 40px;
+    min-width: 40px;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+}
+
+button:-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+button:hover {
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: rgb(195, 195, 195);
+}
+
+input, select {
+    min-height: 40px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+    border-radius: 8px;
+}
+
+input:focus, select:focus, button:focus {
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    outline: solid #949494 1px;
+}
+
+/* estilo do checkbox*/
+
+input[type="checkbox" i] {
+    min-height: 16px;
+    appearance: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #969696;
+    box-shadow: none;
+}
+
+input[type="checkbox" i]:checked {
+    background-color: #969696;
+}
+
+input[type="checkbox" i]:focus, input[type="range" i] {
+    outline: none;
+}
+
+input[type="range" i] {
+    appearance: none;
+    box-shadow: none;
+    width: 100%;
+    margin: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    background: #666666;
+    margin-top: -6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 8.4px;
+    cursor: pointer;
+    background: #606060;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track:focus {
+    height: 4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+/* Ícones */
+
+.like {
+    content: url("../assets/heart.svg");
+    padding: 0 6px;
+}
+
+.buy {
+    content: url("../assets/buy.svg");
+    padding: 0 6px;
+}
+
+.star {
+    content: url("../assets/star.svg");
+    padding: 0 6px;
+}
+
+.star_white {
+    content: url("../assets/star_white.svg");
+    padding: 0 6px;
+}
+
+.rating_5 {
+    content: url("../assets/5_star.svg");
+    width: 128px;
+    height: 19px;
+}
+
+.rating_5_on {
+    content: url("../assets/5_star_on.svg");
+    width: 128px;
+    height: 19px;
+}
+
+.rating_4 {
+    content: url("../assets/4_star.svg");
+    width: 128px;
+    height: 19px;
+}
+
+.rating_4_on {
+    content: url("../assets/4_star_on.svg");
+    width: 128px;
+    height: 19px;
+}
+
+.rating_3 {
+    content: url("../assets/3_star.svg");
+    width: 128px;
+    height: 19px;
+}
+
+.rating_3_on {
+    content: url("../assets/3_star.svg");
+}
+
+.arrow_left {
+    content: url("../assets/chevron-left.svg");
+}
+
+.arrow_right {
+    content: url("../assets/chevron-right.svg");
+}
+
+/* Ações rápidas */
+
+.disable {
+    display: none
+}
+
+.hide {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.p_g {
+    margin: 32px 0 24px 0;
+}
+
+.h_g {
+    min-height: 56px;
 }
