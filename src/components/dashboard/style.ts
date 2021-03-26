@@ -1,7 +1,11 @@
+import styled from "styled-components"
+
+
+const ResultsDashboard = styled.div`
 .dashboard {
     display: flex;
     flex-direction: row;
-    padding: 1.2rem;
+    padding: 1.2rem 12px;
 }
 
 .dashboard form {
@@ -66,6 +70,13 @@
     flex-direction: column;
 }
 
+.results {
+    margin: 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+}
+
 .results_cards {
     display: flex;
     flex-direction: column;
@@ -77,22 +88,24 @@
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
     border-radius: 8px;
+    margin: 1.2rem 0;
 }
 
 .results_cards .card img {
-    max-width: 213px;
-    padding: 12px;
+    max-width: 21.3rem;
+    padding: 1.2rem;
+    object-fit: cover;
 }
 
 .results_cards .card_data {
     display: flex;
-    padding: 12px;
+    padding: 1.2rem;
     flex-grow: 1;
     flex-direction: column;
 }
 
 .results_cards .card_actions {
-    padding: 12px 20px 20px;
+    padding: 1.2rem 2.0rem 2%.0rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -100,37 +113,37 @@
 }
 
 .card_actions button {
-    height: 45px;
-    width: 185px;
+    height: 4.5rem;
+    width: 18.5rem;
 }
 
 .card_data h1 {
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
     color: #2C2C2C;
 }
 
 .card_data h2 {
     font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
     color: #7E7E7E;
 }
 
 .card_data p {
     font-weight: 300;
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
     color: #2C2C2C;
 }
 
 .card_actions h2 {
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
     color: #2C2C2C;
     display: block;
-    padding: 0 64px 0 0;
+    padding: 0 6.4rem 0 0;
 }
 
 .card_rating {
@@ -139,14 +152,14 @@
     align-items: flex-start;
     background: #787878;
     border-radius: 3px;
-    padding: 6px;
+    padding: 0.6rem;
 }
 
 .card_rating p {
-    font-size: 14px;
+    font-size: 1.4rem;
     margin: auto;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1.4rem;
+    line-height: 1.7px;
     color: #FFFFFF;
 }
 
@@ -160,16 +173,16 @@
     background: #EDEDED;
     color: #2C2C2C;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 }
 
 .btn_dark {
     background: #686868;
     color: #FFFFFF;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 }
 
 .btn_dark:hover {
@@ -183,6 +196,7 @@
     margin: 0 12px 0 0;
     padding: 32px 0 0 0;
     flex-shrink: 0;
+    margin: 0 1.2rem 0 1.2rem;
 }
 
 .filters {
@@ -191,7 +205,7 @@
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
     border-radius: 8px;
-    margin: 23px 0 0 0;
+    margin: 2.3rem 0 0 0;
     padding: 32px;
 }
 
@@ -298,6 +312,10 @@
         margin: auto auto 24px auto;
         display: flex;
     }
+
+    .filters {
+    margin: 2.3rem 2.3rem 0 0;
+}
     .results_cards .card {
         flex-wrap: wrap;
     }
@@ -335,3 +353,5 @@
         margin: 0 8px;
     }
 }
+`
+export default ResultsDashboard

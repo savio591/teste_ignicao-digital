@@ -1,0 +1,15 @@
+{
+  "prices": ["10", "10-$100", "100-$500", "Total"],
+  "values_range": { "min": 1.99, "max": 4098 },
+  "categories": [
+    { "id": 0, "name": "Érico Rocha", "quantity": 1920 },
+    { "id": 1, "name": "Desafio 6em 7", "quantity": 1820 },
+    { "id": 2, "name": "Fórmula de Lançamento", "quantity": 462 },
+    { "id": 3, "name": "KickPages", "quantity": 462 }
+  ],
+  "rating": [
+    { "stars": 5, "quantity": 8500 },
+    { "stars": 4, "quantity": 3250 },
+    { "stars": 3, "quantity": 1120 }
+  ]
+}

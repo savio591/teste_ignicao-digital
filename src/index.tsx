@@ -1,5 +1,8 @@
 import React from "react";
 import { render } from "react-dom";
-import Dashboard from "./Dashboard";
+
+import './components/global.css'
+
+import Dashboard from "./PageDashboard";
 
 render(<Dashboard />, document.getElementById("app"));
